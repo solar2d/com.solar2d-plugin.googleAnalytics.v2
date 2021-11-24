@@ -31,6 +31,10 @@ jobs:
             done
           )
           done
+      - name: Get Documentation url
+        uses: juliangruber/read-file-action@v1.1.4
+        with:
+          path: ./documentation.txt
       - name: Release
         uses: softprops/action-gh-release@v1
         with:
@@ -49,6 +53,7 @@ jobs:
           --data '{
             "event_type": "repo_updated",
             "client_payload": {
-                "repo": "${{ github.repository }}"
+                "repo": "${{ github.repository }}",
+                "documentation": "${{ steps.package.outputs.content }}"
               }
             }'
