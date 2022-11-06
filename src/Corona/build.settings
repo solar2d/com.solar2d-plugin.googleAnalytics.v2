@@ -28,7 +28,7 @@ settings =
 
 	plugins = {
         ["plugin.googleAnalytics.v2"] = {
-            publisherId = "com.coronalabs",
+            publisherId = "com.solar2d",
         },
     },
 }

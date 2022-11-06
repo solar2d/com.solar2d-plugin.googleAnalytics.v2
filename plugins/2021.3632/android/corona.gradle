@@ -5,7 +5,7 @@ ext["minSdkVersion"] = Math.max(ext.find("minSdkVersion")?:15, 16)
 
 dependencies {
     // Import the BoM for the Firebase platform
-    implementation platform('com.google.firebase:firebase-bom:28.3.1')
+    implementation platform('com.google.firebase:firebase-bom:29.3.1')
 
     // Declare the dependency for the Analytics library
     // When using the BoM, you don't specify versions in Firebase library dependencies
