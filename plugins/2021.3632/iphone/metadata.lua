@@ -4,8 +4,9 @@ local metadata =
 	{
 		format = 'staticLibrary',
 		staticLibs = { 'plugin_googleAnalyticsV2','z','sqlite3'},
-		frameworks = { "WebKit", "SafariServices", 'FirebaseAnalytics', 'FirebaseCore', 'FirebaseCoreDiagnostics', 'FirebaseInstallations', 'GoogleAppMeasurement','GoogleAppMeasurementIdentitySupport', 'GoogleDataTransport', 'GoogleUtilities', 'nanopb', 'PromisesObjC' },
+		frameworks = { "WebKit", "SafariServices", 'FBLPromises', 'FirebaseAnalytics',"FirebaseAnalyticsSwift", 'FirebaseCore', 'FirebaseCoreInternal', 'FirebaseInstallations', 'GoogleAppMeasurement','GoogleAppMeasurementIdentitySupport', 'GoogleUtilities', 'nanopb' },
 		frameworksOptional = {},
+		usesSwift =true,
 	},
 }
 
